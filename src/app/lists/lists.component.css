@@ -1,0 +1,21 @@
+hr {
+  margin: 5px 0 !important;
+}
+
+.lists-tabs {
+  position: relative;
+}
+
+.pull-float-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.lists-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  color: #555;
+  padding: 20px 0;
+}
