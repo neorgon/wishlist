@@ -1,4 +1,43 @@
 {
   "TITLE": "Bienvenido a la ListaDeDeseos",
-  "MESSAGE": "Sitio en Construccion"
+  "MESSAGE": "Sitio en Construccion",
+
+  "LISTS": {
+    "YOUR_LISTS": "Tus listas",
+    "CREATE_LIST": "Crear lista",
+    "LIST_SETTINGS": "Configuración de la lista"
+  },
+  "LISTS_VIEW": {
+    "LISTS": "Listas",
+    "FIND_ITEMS": "Buscar un item en tus listas"
+  },
+  "ITEMS_VIEW": {
+    "NEW_ITEM": "Añadir nuevo item",
+    "REMOVE_ITEM": "Quitar item"
+  },
+  "CREATE_LIST": {
+    "NEW_LIST": "Crear nueva lista",
+    "NAME": "Nombre",
+    "DESCRIPTION": "Descripción"
+  },
+  "CREATE_ITEM": {
+    "NEW_ITEM": "Crear nuevo item",
+    "NAME": "Nombre",
+    "PRICE": "Precio",
+    "QTTY": "Cantidad",
+    "DESCRIPTION": "Descripción"
+  },
+  "MODAL": {
+    "CLOSE": "Cerrar",
+    "SAVE": "Guardar cambios"
+  },
+  "USER_LIST": {
+    "NAME": "Nombre",
+    "DESCRIPTION": "Descripcion",
+    "LIST": "Lista"
+  },
+  "NAMEITEM": "Nombre del Item",
+  "BTNREMOVE": "Quitar",
+  "NAMELIST": "Nombre de la lista",
+  "OWNER": "Propietario"
 }

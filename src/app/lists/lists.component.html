@@ -16,7 +16,7 @@
                 <div class="collapse navbar-collapse" id="navbarLists">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#createListModal">
                                 Create List
                             </a>
                         </li>
@@ -33,10 +33,11 @@
 
     <div class="row">
         <div class="col-md-4">
-            <app-lists-view></app-lists-view>
+            <app-list-view [userName]="name"></app-list-view>
         </div>
         <div class="col-md-8">
-            <!--app-create-list></app-create-list-->
+            <app-create-list></app-create-list>
+            <app-create-item></app-create-item>
             <app-items-view></app-items-view>
         </div>
     </div>

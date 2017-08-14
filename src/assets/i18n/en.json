@@ -1,4 +1,43 @@
 {
   "TITLE": "Welcome To The WishList",
-  "MESSAGE": "Site in construction"
+  "MESSAGE": "Site in construction",
+
+  "LISTS": {
+    "YOUR_LISTS": "Your lists",
+    "CREATE_LIST": "Create list",
+    "LIST_SETTINGS": "List settings"
+  },
+  "LISTS_VIEW": {
+    "LISTS": "Lists",
+    "FIND_ITEMS": "Find items across your lists"
+  },
+  "ITEMS_VIEW": {
+    "NEW_ITEM": "Add new item",
+    "REMOVE_ITEM": "Remove item"
+  },
+  "CREATE_LIST": {
+    "NEW_LIST": "Create new list",
+    "NAME": "Name",
+    "DESCRIPTION": "Description"
+  },
+  "CREATE_ITEM": {
+    "NEW_ITEM": "Create new item",
+    "NAME": "Name",
+    "PRICE": "Price",
+    "QTTY": "Quantity",
+    "DESCRIPTION": "Description"
+  },
+  "MODAL": {
+    "CLOSE": "Close",
+    "SAVE": "Save changes"
+  },
+  "USER_LIST": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description",
+    "LIST": "List"
+  },
+  "NAMEITEM":"Name of item",
+  "BTNREMOVE": "Remove",
+  "NAMELIST": "Name of list",
+  "OWNER": "Owner"
 }
