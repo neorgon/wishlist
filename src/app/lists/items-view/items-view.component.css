@@ -1,0 +1,25 @@
+.custom-item img {
+    margin-bottom: 20px;
+}
+
+.custom-item p {
+    color: #666;
+    font-size: 11px;
+}
+
+.custom-item p.text-danger {
+    margin: 0;
+    padding: 3px 0;
+}
+
+.custom-item button.btn {
+    font-size: 11px;
+    margin-bottom: 20px;
+    padding: 3px 10px;
+}
+
+@media (max-width: 767px) {
+    .custom-item [class *="col-"] {
+        text-align: center
+    }
+}

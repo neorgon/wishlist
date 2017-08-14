@@ -6,7 +6,10 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ListsModule } from './lists/lists.module';
+import { ListsComponent } from './lists/lists.component';
+import { ListsViewComponent } from './lists/lists-view/lists-view.component';
+import { CreateListComponent } from './lists/create-list/create-list.component';
+import { ItemsViewComponent } from './lists/items-view/items-view.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -15,10 +18,13 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    ListsComponent,
+    ListsViewComponent,
+    CreateListComponent,
+    ItemsViewComponent
   ],
   imports: [
-    ListsModule,
     BrowserModule,
     NgbModule.forRoot(),
     HttpClientModule,

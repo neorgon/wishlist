@@ -1,43 +1,43 @@
-<div class="container">
+<div class="lists container">
 
-    <div class="row lists-tabs">
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Your List</a></li>
-        </ul>
-        <div class="pull-float-right">
-            <nav class="navbar">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="">Create List</a>
-                    </li>
-                    <li>
-                        <a href="">List Settings</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Your List</a>
+        </li>
+    </ul>
+
+    <div class="lists-navbar">
+        <nav class="navbar navbar-light navbar-expand-sm custom-navbar">
+            <div class="container">
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarLists" aria-controls="navbarLists" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarLists">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Create List
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                List Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-    <div class="row lists-container">
-        <div class="col-sm-4">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Find items across your lists">
-                <div class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-                </div>
-            </div>
-            <br />
-            <br />
-            <div class="panel panel-default">
-                <div class="panel-heading">Lists</div>
-                <div class="panel-body">
-                    Create a new list
-                    <app-lists-view></app-lists-view>
-                </div>
-            </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <app-lists-view></app-lists-view>
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
+            <!--app-create-list></app-create-list-->
+            <app-items-view></app-items-view>
         </div>
     </div>
 
