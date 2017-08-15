@@ -1,9 +1,7 @@
-.wl-logo {
-  display: block;
-  padding-top: 5px;
+.custom-navbar .nav-link {
+    border-right: 1px solid #ccc;
 }
 
-.wl-logo img {
-  height: 40px;
-  width: 40px;
+.custom-navbar .nav-item:last-child .nav-link {
+    border-right: none;
 }

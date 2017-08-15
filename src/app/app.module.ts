@@ -12,6 +12,7 @@ import { ListsModule } from './lists/lists.module';
 import { ItemComponent } from './item/item.component';
 import { ListComponent } from './list/list.component';
 import { ListService } from './list/list.service';
+import { HomepageComponent } from './homepage/homepage.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -20,8 +21,9 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     NavbarComponent,
+    HomepageComponent,
     ItemComponent,
-    ListComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
