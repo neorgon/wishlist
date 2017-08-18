@@ -1,0 +1,15 @@
+{
+  "NAVBAR": {
+    "SIGN_IN": "Ingresar",
+    "SIGN_UP": "Registrarse"
+  },
+  "HOME": {
+    "MY_WISH": "Mi lista de Deseos",
+    "USERNAME": "Nombre de usuario",
+    "PASSWORD": "Contraseña",
+    "PASS": {
+      "NOTE": "Use al menos una letra, un número y siete caracteres."
+    },
+    "REGISTER": "Registrarme en Wishlist"
+  }
+}

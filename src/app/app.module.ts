@@ -9,9 +9,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListsModule } from './lists/lists.module';
-import { ItemComponent } from './item/item.component';
-import { ListComponent } from './list/list.component';
-import { ListService } from './list/list.service';
 import { HomepageComponent } from './homepage/homepage.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -22,8 +19,6 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    ItemComponent,
-    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -39,11 +34,10 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     RouterModule.forRoot([
       { path: '', component:AppComponent },
-      { path: 'lists/:id/items', component:ListComponent },
       { path: '**', redirectTo: '' }
     ])
   ],
-  providers: [ListService],
-  bootstrap: [AppComponent]
+  providers: [ ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

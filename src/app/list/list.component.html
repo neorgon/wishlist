@@ -1,9 +1,0 @@
-<div class="main">
- <p>{{ 'NAMELIST' | translate }}: {{items[0].name}} {{ 'OWNER' | translate }}: {{items[0].owner}} </p>
- <hr/>
-  <div class="container">
-    <div class="row" *ngFor="let item of items[0].item">
-      <app-item [item]='item'></app-item>
-    </div>
-  </div>
-</div>

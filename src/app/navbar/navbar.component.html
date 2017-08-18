@@ -19,6 +19,21 @@
                             {{ 'NAVBAR.SIGN_UP' | translate }}
                         </a>
                     </li>
+                    <li class="nav-item">
+                      <div class="dropdown">
+                        <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                          <span class="fa fa-globe custom-fa text-white"></span>
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" id="nav-dropdown1-tab" href="#" (click)="switchLanguage('en')">
+                            <span class="flag-icon flag-icon-gb"></span> English
+                          </a>
+                          <a class="dropdown-item" id="nav-dropdown2-tab" href="#" (click)="switchLanguage('es')">
+                            <span class="flag-icon flag-icon-es"></span> Español
+                          </a>
+                        </div>
+                      </div>
+                    </li>
                 </ul>
             </div>
         </div>

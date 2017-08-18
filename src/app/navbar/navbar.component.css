@@ -1,7 +1,15 @@
-.custom-navbar .nav-link {
-    border-right: 1px solid #ccc;
+.custom-fa {
+  font-size: 19px !important;
 }
 
-.custom-navbar .nav-item:last-child .nav-link {
+@media (min-width: 768px) {
+
+  .custom-navbar .nav-link {
+     border-right: 1px solid #999;
+   }
+
+  .custom-navbar .nav-item:last-child .nav-link {
     border-right: none;
+  }
+
 }

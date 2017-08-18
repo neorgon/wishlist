@@ -7,6 +7,10 @@
         "SIGN_UP": "Sign up"
     },
 
+    "HOME": {
+      "MY_WISH": "My Wishlist"
+    },
+
     "LISTS": {
         "YOUR_LISTS": "Your lists",
         "CREATE_LIST": "Create list",

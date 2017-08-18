@@ -1,0 +1,13 @@
+{
+  "NAVBAR": {
+    "SIGN_IN": "Sign in",
+    "SIGN_UP": "Sign up"
+  },
+  "LISTS": {
+    "YOURS": "Your Lists",
+    "CREATE": "Create List",
+    "EDIT": "Edit List",
+    "TITLE": "List",
+    "FIND_ITEM": "Find items across your lists"
+  }
+}
