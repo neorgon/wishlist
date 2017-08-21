@@ -1,0 +1,43 @@
+<div class="lists container">
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">{{ 'LISTS.YOURS' | translate }}</a>
+    </li>
+  </ul>
+
+  <div class="lists-navbar">
+    <nav class="navbar navbar-light navbar-expand-sm custom-navbar">
+      <div class="container">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarLists" aria-controls="navbarLists" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarLists">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#createListModal">
+                {{ 'LISTS.CREATE' | translate }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                {{ 'LISTS.EDIT' | translate }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <app-list-view></app-list-view>
+    </div>
+    <div class="col-md-8">
+      <!--app-list-detail></app-list-detail-->
+    </div>
+  </div>
+
+</div>

@@ -6,11 +6,7 @@
 /out-tsc
 
 # dependencies
-/main-template/node_modules
-/fe-homepage/node_modules
-/fe-list-items/node_modules
-/fe-lists/node_modules
-/fe-navbar/node_modules
+/node_modules
 
 # IDEs and editors
 /.idea
@@ -38,16 +34,8 @@ testem.log
 /typings
 
 # e2e
-/main-template/e2e/*.js
-/main-template/e2e/*.map
-/fe-homepage/e2e/*.js
-/fe-homepage/e2e/*.map
-/fe-list-items/e2e/*.js
-/fe-list-items/e2e/*.map
-/fe-lists/e2e/*.js
-/fe-lists/e2e/*.map
-/fe-navbar/e2e/*.js
-/fe-navbar/e2e/*.map
+/e2e/*.js
+/e2e/*.map
 
 # System Files
 .DS_Store

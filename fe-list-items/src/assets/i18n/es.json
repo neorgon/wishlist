@@ -1,0 +1,13 @@
+{
+  "NAVBAR": {
+    "SIGN_IN": "Ingresar",
+    "SIGN_UP": "Registrarse"
+  },
+  "LISTS": {
+    "YOURS": "Tus Listas",
+    "CREATE": "Crear una Lista",
+    "EDIT": "Editar Lista",
+    "TITLE": "Lista",
+    "FIND_ITEM": "Buscar items en tus listas"
+  }
+}
