@@ -10,6 +10,8 @@ import { ListDataService } from './list-data.service';
 import { ItemsViewComponent } from './items-view/items-view.component';
 import { ItemViewComponent } from './item-view/item-view.component';
 import { CreateListComponent } from './create-list/create-list.component';
+import { CreateItemComponent } from './create-item/create-item.component';
+import { EditListComponent } from './edit-list/edit-list.component';
 
 import {NgbModule, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
@@ -26,6 +28,8 @@ import {NgbModule, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
     ItemsViewComponent,
     ItemViewComponent,
     CreateListComponent,
+    CreateItemComponent,
+    EditListComponent,
     ListsComponent
   ],
   providers: [
@@ -37,6 +41,8 @@ import {NgbModule, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
     ItemsViewComponent,
     ItemViewComponent,
     CreateListComponent,
+    CreateItemComponent,
+    EditListComponent,
     ListsComponent
   ]
 

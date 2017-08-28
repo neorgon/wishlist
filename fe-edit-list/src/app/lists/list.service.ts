@@ -10,9 +10,10 @@ import { List, ListWrapper, ListPostWrapper } from './list-view/list.model';
 export class ListService {
 
   constructor( private http: HttpClient ) {
-  }
-  getLists(): Observable<List[]> {
 
+  }
+
+  getLists(): Observable<List[]> {
     return this.http.get<ListWrapper>( `${environment.backendPath}lists/`).map(
       (wrapper: ListWrapper) => {
         return wrapper.data;
@@ -24,16 +25,18 @@ export class ListService {
   }
 
   getListItems(idlist: string): Observable<List[]> {
-    return this.http.get<ListWrapper>(`${environment.backendPath}lists/${idlist}/items`).map(
+    return this.http.get<ListWrapper>(`${environment.backendPath}lists/${idlist}/items`)
+      .map(
       (list: ListWrapper) => {
         return list.data;
       }
     );
   }
+
   addList(list): Observable<List> {
     return this.http.post(`${environment.backendPath}lists/`, list, { headers: new HttpHeaders().set('Content-Type', 'application/json') }).
-    map((list: ListPostWrapper) => {
-      const customList = list.data;
+    map((newList: ListPostWrapper) => {
+      const customList = newList.data;
       const dataList: List = {
         _id: customList.id,
         name: customList.attributes.name,
@@ -55,6 +58,17 @@ export class ListService {
   }
 
   deleteList(listId): Observable<List> {
-    return this.http.delete(`${environment.backendPath}lists/${listId}`);
+    return this.http.delete <List>(`${environment.backendPath}lists/${listId}`);
+  }
+
+  addItem(listId, item): Observable<ListWrapper> {
+    return this.http.post <ListWrapper> (
+      `${environment.backendPath}lists/${listId}/items`,
+      item,
+      {headers: new HttpHeaders().set('Content-Type',
+      'application/json')}).
+    map ((list: ListWrapper) => {
+      return list;
+    });
   }
 }

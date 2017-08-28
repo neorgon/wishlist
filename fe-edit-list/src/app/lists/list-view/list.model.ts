@@ -4,14 +4,7 @@ export interface List {
   name: string;
   description: string;
   image?: string;
-  item?: [
-    {
-      _id: string;
-      name: string;
-      price: Number;
-      quantity: Number;
-      responsible: string;
-    }];
+  item?: Item[];
 }
 
 export interface ListWrapper {
@@ -23,4 +16,11 @@ export interface ListPostWrapper {
     id: string;
     attributes: List;
   };
+}
+
+export interface Item {
+    name: string;
+    price: Number;
+    quantity: Number;
+    responsible: string;
 }

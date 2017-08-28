@@ -1,8 +1,14 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
+import { ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+
 import { Subscription } from 'rxjs/Subscription';
+
 import { ListService } from './../list.service';
-import { List } from '../list-view/list.model';
+import { List, ListWrapper } from '../list-view/list.model';
+import { ListDataService } from '../list-data.service';
+import { CreateItemComponent } from '../create-item/create-item.component';
 
 @Component({
   selector: 'app-items-view',
@@ -16,8 +22,14 @@ export class ItemsViewComponent implements OnInit, OnDestroy {
   public error;
   public idList = '';
   private listSubscription: Subscription;
+  public viewAddItem = false;
 
-  constructor( private listService: ListService, private route: ActivatedRoute) {
+  constructor(
+    private listService: ListService,
+    private route: ActivatedRoute,
+    private routeNavigate: Router,
+    private listDataService: ListDataService,
+    private modalService: NgbModal) {
     this.route.params.subscribe((param) => {
       this.idList = param['id'];
       this.getItemsForList(this.idList);
@@ -27,10 +39,16 @@ export class ItemsViewComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.route.params.subscribe((param) => { this.idList = param['id']; });
     this.getItemsForList(this.idList);
+    this.listDataService.itemUpdated$.subscribe(
+      (newList) => {
+        this.items = newList.data;
+      }
+    );
   }
 
   getItemsForList(idList) {
-    this.listSubscription = this.listService.getListItems(idList).subscribe((listItems: List[]) => {
+    this.listSubscription = this.listService.getListItems(idList)
+      .subscribe((listItems: List[]) => {
       this.items = listItems;
     },
     error => {
@@ -42,5 +60,13 @@ export class ItemsViewComponent implements OnInit, OnDestroy {
     if (this.listSubscription) {
       this.listSubscription.unsubscribe();
     }
+  }
+
+  createItemClick() {
+    this.viewAddItem = true;
+  }
+
+  closeAdd(event) {
+    this.viewAddItem = event.flag;
   }
 }

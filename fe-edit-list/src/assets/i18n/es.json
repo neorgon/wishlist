@@ -1,9 +1,13 @@
 {
+  "EDIT_LIST": {
+    "TITLE": "Editar lista",
+    "SAVE": "Acutalizar datos"
+  },
   "ITEMS_VIEW":{
-    "ITEM_NAME": "Nombre del Item",
+    "ITEM_NAME": "Nombre:",
     "LIST_NAME": "Nombre de la lista",
     "OWNER": "Propietario",
-    "ADD_NEW_ITEM": "Anadir item",
+    "CREATE_ITEM": "Anadir item",
     "REMOVE_ITEM": "Remover item",
     "DESCRIPTION": "Descripcion"
   },
@@ -18,7 +22,8 @@
     "LIST_NAME": "Nombre de la lista",
     "NAME_REQUIRED": "El nombre es requerido",
     "OWNER_REQUIRED": "El propietario es requerido",
-    "REQUIRED": "Requerido"
+    "REQUIRED": "Requerido",
+    "SIZE": "Maximo tamaño permitido 4MB"
   }, 
   "USER_LIST":{
     "NAME": "Nombre",
@@ -51,8 +56,20 @@
     "DELETE": "Borrar",
     "LISTS": "Listas",
     "DELETEMSG": "Desea borrar la lista",
-    "CANCEL": "Cancelar",
-    "ACCEPT": "Aceptar"
+    "CANCEL": "No",
+    "ACCEPT": "Si"
 
+  },
+  "CREATE_ITEM": {
+    "NAME":"Nombre",
+    "PRICE": "Precio",
+    "IMAGE": "Imagen",
+    "QUANTITY": "Cantidad",
+    "CANCEL": "Cancelar",
+    "SAVE": "Guardar",
+    "TITLE":"Crear articulo",
+    "ITEM_NAME":"Nombre del articulo",
+    "ITEM_PRICE":"Precio del articulo",
+    "ITEM_QUANTITY":"Cantidad de articulos"
   }
 }
